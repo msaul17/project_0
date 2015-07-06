@@ -35,7 +35,6 @@ SaveRender.prototype.renderTemplate = function(template_source, where) {
 Book.prototype = new SaveRender();
 Book.prototype.constructor = Book;
 
-var myBook = new Book("Arun's Book", "Arun Sood", "Today", "http://1.bp.blogspot.com/-qJA7dW3W-M0/VH4l2LQUIEI/AAAAAAAAACo/ZJqeqHgpmBs/s1600/books.png");
-myBook.saveToLs(myBook);
+var myBook = new Book("Arun's Book", "Arun Sood", "Today", "Whatever I want it to be");
 
 myBook.renderTemplate("#book-template", "#book-container");

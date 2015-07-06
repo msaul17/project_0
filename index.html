@@ -15,34 +15,36 @@
 
 <div class="container">
 	<div class="margin-top-20">
-		<a href="#" data-toggle="modal" data-target="#add-book-modal" class="btn btn-primary">Add New Book</a>
+		<a href="#" data-toggle="modal" data-target="#add-book-modal" class="btn btn-primary">Add New Activity or Place to See</a>
 	</div>
-
-	<div id="book-container"></div>
-
-	<script type="text/template" id="book-template">
-		<!--One Book-->
-		<div class="row margin-top-20 book-container">
-			<div class="col-sm-3">
-				<img src="<%= image %>" class="img-responsive" />
-			</div>
-			<div class="col-sm-9">
-				<div class="margin-top-20">
-					<span class="bold">Title: </span><span><%= title %></span>
-				</div>
-				<div>
-					<span class="bold">Author: </span><span><%= author %></span>
-				</div>
-				<div>
-					<span class="bold">Release Date: </span><span><%= release_date %></span>
-				</div>
-				<div class="margin-top-20">
-					<a href="#" class="btn btn-default">Edit Book</a>
-				</div>
-			</div>
+	<!--One Book-->
+	<div class="row margin-top-20 book-container">
+		<div class="col-md-6">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Mars_atmosphere_2.jpg" class="img-responsive" />
 		</div>
-		<!--/One Book-->
-	</script>
+		<div class="col-md-4">
+			<div class="margin-top-20">
+				<span class="bold">Planet: </span><span>Mars</span>
+			</div>
+			<div>
+				<span class="bold">Distance from Earth: </span><span>140,000,000 miles</span>
+			</div>
+			<div>
+				<span class="bold">Things to do/see: </span>
+					<div class="margin-top-10">
+						<li><a href="#">Dust Surfing</a></li>
+						<li><a href="#">Super Low-G Martian Arts</a></li>
+						<li><a href="#">Climb Olympus Mons</a></li>
+						<li><a href="#">Mars History Tour</a></li>
+					</div>
+			</div>
+			<div class="margin-top-20">
+				<a href="#" class="btn btn-default">Edit Book</a>
+			</div>
+			<div class="margin-top-20">Trying this out - this is where your posts will go</div>
+		</div>
+	</div>
+	<!--/One Book-->
 </div>
 
 <!--Add Book Modal-->
@@ -51,7 +53,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">Add New Book</h4>
+				<h4 class="modal-title">New Activity</h4>
 			</div>
 			<div class="modal-body">
 				<div class="bold">
